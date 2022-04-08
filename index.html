@@ -4,76 +4,86 @@
       •Course:Software Development 20S
       •Teacher: Mr. Hardman
       •School: Pembina Trails Early College
-      •Date Last Modified: 4/4/2022 -->  
+      •Date Last Modified: 2022/4/7 -->  
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D&Me</title>
-    <h1>D&Me</h1>
-    <h4>My D&D Adventure</h4> 
   </head>
 
   <body>
-
-    <p>
-
-      D&Me is my storage for all things D&D
-      <br />
-      This website contains online D&D books along with session scheduling for your D&D games
-      <br />
-      Other things it might include are, Rescources for character creation,
-
-    </p>
-
-    <h2>The Players Hanbook</h2>
-
-    <iframe
-      src="http://anyflip.com/afgs/xkls/"
-      alt="A non-downloadable document with the players handbook from the corporation Wizards of the Coast"
-      height="1000"
-      width="600"
-    ></iframe><br />
-
-    <h2>How to create a D&D character</h2>
-
-    <iframe
-      width="1550"
-      height="730"
-      src="https://www.youtube.com/embed/ZcNgj0KPYuA"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-
-    <h2>How do you play D&D?</h2>
-
-    <form>
-      <!--  a form that asks the user for the version of Dungeons Of Dragons they play for no reason  -->
-      <label for="DnDVersion" name="DnDVersion">What version of D&D do you play?</label><br/>
-      <select name="DnDVersion" id="DnDVersion">
-        <option value="D&D">D&D</option>
-        <option value="D&D_Advanced">D&D Advanced</option>
-        <option value="D&D_Advanced_2nd_edition">D&D Advanced 2nd edition</option>
-        <option value="other">other</option>
-      </select><br/>
-
-      <!--  asks for a text input of what D&D class a person is playing, for no reason  -->
-      <label for="characterClass" name="characterClass">What D&D character class do you play? </label><br/>
-      <input type="text" id="characterClass" name="characterClass"><br/>
-
-      <!--  asks for a date input of when a person started playing D&D, for no reason  -->
-      <label for="startPlaying" name="startPlaying">When did you start playing D&D?</label><br/>
-      <input type="date" id="startPlaying" name="startPlaying">
-    </form>
-
-    <h2>Here are some great D&D sources</h2>
-
-    <img src="images/DMGuide.jpeg"  alt="A Photo of the official Dungeon Master's Guide from D&D Beyond, a great book for players who wish to run a D&D campaign" height="500" width="500">
-    <img src="images/D&DLogo.png"  alt="a photo of the D&D Beyond logo, D&D Beyond is the main source of all official Dungeons and Dragons books" height="500" width="500">
-    <img src="images/MonsterManual.jpeg" alt="A Photo of D&D beyond's Monster Manual, a must for all DMs/GMs" height="500" width="500"></br>
     
-  
+    <header>
+      <h1>D&Me</h1>
+      <a href="page2.html">Music rescources</a>
+    </header>
+
+    <main>
+      <h4>My D&D Adventure</h4> 
+
+      <p>
+
+        D&Me is my storage for all things <u>D&D</u>
+        <br />
+        This website contains online <u>D&D</u> books along with session scheduling for your <u>D&D</u> games
+        <br />
+        Other things it might include are, Rescources for character creation,
+
+      </p>
+
+      <h2>The Players Hanbook</h2>
+
+      <iframe
+        src="http://anyflip.com/afgs/xkls/"
+        alt="A non-downloadable document with the players handbook from the corporation Wizards of the Coast"
+        height="1000"
+        width="600"
+      ></iframe><br />
+
+      <h2>How to create a D&D character</h2>
+
+      <iframe
+        width="1550"
+        height="730"
+        src="https://www.youtube.com/embed/ZcNgj0KPYuA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <h2>How do you play D&D?</h2>
+
+      <form>
+        <!--  a form that asks the user for the version of Dungeons Of Dragons they play, so that they can see if they know how to play the version of the game a DM runs  -->
+        <label for="DnDVersion" name="DnDVersion">What version of D&D do you play?</label><br/>
+        <select name="DnDVersion" id="DnDVersion">
+          <option value="D&D">D&D</option>
+          <option value="D&D_Advanced">D&D Advanced</option>
+          <option value="D&D_Advanced_2nd_edition">D&D Advanced 2nd edition</option>
+          <option value="other">other</option>
+        </select><br/>
+
+        <!--  asks for a text input of what D&D class a person is playing, in case a DM doesnt like rouges -->
+        <label for="characterClass" name="characterClass">What D&D character class do you play? </label><br/>
+        <input type="text" id="characterClass" name="characterClass"/><br/>
+
+        <!--  asks for a date input of when a person started playing D&D, to see how well they know the game (long term players will probably know more)  -->
+        <label for="startPlaying" name="startPlaying">When did you start playing D&D?</label><br/>
+        <input type="date" id="startPlaying" name="startPlaying"/><br/>
+        <!--asks for a file input, intended for a person D&D character sheet for DMs-->
+        <label for="characterSheet" name="characterSheet">Please put your character sheet below</label><br/>
+        <input type="file" id="characterSheet" name="characterSheet"/>
+      </form>
+
+      <h2>Here are some great D&D sources</h2>
+
+      <img src="images/DMGuide.jpeg"  alt="A Photo of the official Dungeon Master's Guide from D&D Beyond, a great book for players who wish to run a D&D campaign" height="500" width="500">
+      <img src="images/D&DLogo.png"  alt="a photo of the D&D Beyond logo, D&D Beyond is the main source of all official Dungeons and Dragons books" height="500" width="500">
+      <img src="images/MonsterManual.jpeg" alt="A Photo of D&D beyond's Monster Manual, a must for all DMs/GMs" height="500" width="500"></br>
+        
+    </main>
   </body>
 </html>
